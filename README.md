@@ -1,9 +1,9 @@
 # dirname [![NPM version](https://badge.fury.io/js/dirname.png)](http://badge.fury.io/js/dirname)
 
-> {%= description %}
+> Bind a directory to path.join
 
 ```bash
-npm i {%= name %} --save
+npm i dirname --save
 ```
 ## Usage
 
