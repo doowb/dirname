@@ -1,6 +1,6 @@
 {
   "name": "dirname",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Bind a directory to path.join",
   "main": "index.js",
   "scripts": {
