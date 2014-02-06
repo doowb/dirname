@@ -31,4 +31,11 @@ describe('dirname', function() {
     expect(actual).to.eql(expected);
   });
 
+  it('should bind to a directory and be able to use require', function() {
+    var fixtures = dirname(__dirname + '/fixtures');
+    var expected = 'bar';
+    var actual = require(fixtures.dir('foo'))();
+    expect(actual).to.eql(expected);
+  });
+
 });
