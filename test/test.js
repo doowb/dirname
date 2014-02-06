@@ -27,14 +27,14 @@ describe('dirname', function() {
   it('should bind to local test directory', function() {
     var local = dirname(__dirname);
     var expected = fs.readFileSync(path.join(__dirname, 'test.js'), 'utf8');
-    var actual = fs.readFileSync(local.dir('test.js'), 'utf8');
+    var actual = fs.readFileSync(local('test.js'), 'utf8');
     expect(actual).to.eql(expected);
   });
 
   it('should bind to a directory and be able to use require', function() {
     var fixtures = dirname(__dirname + '/fixtures');
     var expected = 'bar';
-    var actual = require(fixtures.dir('foo'))();
+    var actual = require(fixtures('foo'))();
     expect(actual).to.eql(expected);
   });
 

@@ -10,8 +10,8 @@ npm i {%= name %} --save
 ```js
 var dirname = require('dirname');
 var utils = dirname('./utils');
-var foo = require(utils.dir('foo'));
-var bar = require(utils.dir('bar'));
+var foo = require(utils('foo'));
+var bar = require(utils('bar'));
 ```
 
 ## Methods
@@ -20,9 +20,9 @@ var bar = require(utils.dir('bar'));
 
 By default the `dirname()` method expects a string. The string is the path to the directory to bind to.
 
-`dirname()` returns an object with one method called `dir()`. `dir()` is bound to the path provided earlier.
+`dirname()` returns a method that is bound to the path provided.
 
-Use `dir()` in places that you would normally use `path.join()` but it will start from the provided path
+Use this bound in places that you would normally use `path.join()` to start from the provided path.
 
 ## Authors
 
