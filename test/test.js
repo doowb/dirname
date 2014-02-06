@@ -13,6 +13,7 @@ var expect = require('chai').expect;
 
 // node
 var path = require('path');
+var fs = require('fs');
 
 // Local libs
 var dirname = require('../');

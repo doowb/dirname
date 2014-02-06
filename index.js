@@ -10,8 +10,6 @@ var path = require('path');
 
 var dirname = module.exports = function (base) {
   return {
-    dir: function () {
-      return path.join.bind(base, arguments);
-    }
+    dir: path.join.bind(path, base)
   };
 };
